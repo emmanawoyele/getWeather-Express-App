@@ -29,7 +29,7 @@ response.json().then((data)=>{
     {Temp_3.textContent="lat:"+data.latitude}
     {Temp_4.textContent="lon:" +data.longitude}
     {Temp_5.textContent="LocalTime:"+data.timeZone}
-    {Temp_6.textContent="Pressure:"+data.Pressure}
+    {Temp_6.textContent="Pressure:"+data.pressure}
     {Temp_7.textContent="wind direction:"+data.wind_dir}
     console.log(data)
 
