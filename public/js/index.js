@@ -13,7 +13,7 @@ e.preventDefault()
 const getSearch= searchValue.value
 Temp_1.textContent= 'Loading...'
 console.log(getSearch)
-var weatherApi =fetch('http://localhost:3000/Weather?location='+getSearch).then((response)=>{
+var weatherApi =fetch('/Weather?location='+getSearch).then((response)=>{
     
 response.json().then((data)=>{
     if(data.error){

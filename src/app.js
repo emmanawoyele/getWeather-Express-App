@@ -6,7 +6,7 @@ const geocode=require('./utils/geocode')
 // hbs need to be require to load partials
 const hbs =require('hbs')
 const app = express()
-
+const port=process.env.PORT || 300
 // Define paths for Express config
 const publicDirectory= path.join(__dirname,'../public')
 const templateView = path.join(__dirname, '../template/views')
@@ -131,6 +131,6 @@ errorMessage:"page not found"
 
 })
 
-app.listen(3000,()=>{
-    console.log("Server is up on 3000 ")
+app.listen(port,()=>{
+    console.log("Server is up on" + " port ")
 })
