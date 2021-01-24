@@ -1,0 +1,25 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    background:red!important;
+    
+}
+.nav a{
+    padding-right:10px;
+}
+form{
+    margin-top:30px;
+    height: 22px;
+}
+button{
+    padding: 5px;
+    background: #888888;
+    color: white;
+    outline: none;
+}
