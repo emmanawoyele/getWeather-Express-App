@@ -8,7 +8,7 @@ callback('Unable to connect to location services',undefined)
 }else if(response.body.error){
     callback('unable to find location',undefined)
 }else {
-    callback(undefined,"The weather Temperature is " + response.body.current.temperature + "-degrees"+ " but it feels like " + response.body.current.feelslike + " degrees outside", response.body.current.wind_dir,response.body.location.timezone_id)
+    callback(undefined,"The weather Temperature is " + response.body.current.temperature + "-degrees"+ " but it feels like " + response.body.current.feelslike + " degrees outside", response.body.current.wind_dir,response.body.location.timezone_id,response.body.current.pressure,response.body.current.wind_speed)
   
 }
 

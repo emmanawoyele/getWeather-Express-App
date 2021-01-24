@@ -70,7 +70,7 @@ app.get("/Weather",(req,res)=>{
         geocode(req.query.location,(error,{latitude, longitude}={})=>{ 
        if(error){
           return  res.send({error})
-       }forecast(latitude,longitude,(error,Forecastdata,wind,timezone_id)=>{
+       }forecast(latitude,longitude,(error,Forecastdata,wind,timezone_id,pressure,wind_speed)=>{
            if(error){
              res.send({error})
            }else{ res.send({
@@ -80,6 +80,8 @@ app.get("/Weather",(req,res)=>{
             wind_dir:wind,
             timeZone:timezone_id,
             address:req.query.location,
+            pressure:pressure,
+            wind:wind_speed
            
 
         })}
